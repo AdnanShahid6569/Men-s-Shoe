@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Catogories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+     <!-- header Start -->
+  <nav class="navbar navbar-expand-lg container-fluid ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light ms-3" href="#"><span>Men's</span> Shoes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-dark "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link link-nav " aria-current="page" href="../index.html" target="_blank">Home</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" aria-current="page" href="../About/about.html " target="_blank">About</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="product.html" target="_blank" >Product</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="../Contact/contact.html" target="_blank">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shoe Catogories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item bg-dark text-light" href="../Catogorie-Running/running.html" target="_blank">Dynamic Runner</a></li>
+              <li><a class="dropdown-item bg-dark text-light" href="../Catogorie-Adventure/adventure.html" target="_blank">Adventure</a></li>
+              <li><a class="dropdown-item bg-dark text-light" href="../Catogorie-Sneaker/sneaker.html" target="_blank">Sneakers</a></li>
+              <li><a class="dropdown-item bg-dark text-light" href="../Catogorie-Loafer/loafer.html" target="_blank">Lofers</a></li>
+
+
+            </ul>
+          </li>
+        </ul>
+        <div class="icon">
+          <i title="Search" class="fa-solid fa-magnifying-glass text-light fs-5 mx-3"></i>
+          <i title="Setting" class="fa-solid fa-gear text-light fs-5 mx-3"></i>
+          <i title="SingUp" class="fa-solid fa-user text-light fs-5 mx-3"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header End -->
+
+  <!-- Catogories Section Start -->
+    <!-- img Section Start -->
+  <div class="container border border-2 main">
+    <div class="row ">
+
+      <div class="col-12 col-md-6 d-flex align-items-center img-sec">
+        <h1 class="img-heading ">Amazing Men's Shoe <br> <span>Lets Check it...</span> </h1>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="img-div text-center">
+          <img src="../mainImages/runingshoe.jpg" alt="Running Shoe" class="img-fluid" style="margin-left: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--img Section End -->
+
+  <!-- img Section Description Start -->
+  <div class="container mt-3">
+    <div class="row">
+      <div class="Catogories-head-Desc col-12 col-md-12 text-center p-1">
+        <h2 class="Catogories-Desc">Elevate Your Everyday Look</h2>
+        <p> "Discover our exclusive range of men's footwear, crafted for style, comfort, and durability. From casual
+          sneakers and rugged boots to elegant dress shoes, each pair is designed to suit various occasions and elevate
+          your wardrobe. Whether for daily wear, office, or special events, our collection ensures the perfect blend of
+          functionality and fashion for every step."</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- img Section Description End -->
+
+  <!-- Catogorie head Section Start-->
+   <div class="Catogorie-head">
+    <h1>Shoe Universe</h1>
+   </div>
+  <!-- Catogorie head Section End -->
+  <!-- Card Section Start -->
+   <div class="adventure-shoe-div d-flex flex-direction-column justify-content-center gap-5 flex-wrap">
+    <div class="adventure-card-1  text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie Adventure Shoe/ad black.webp" alt="">
+        <p>Adventure shoes stylish,blackColor </p>
+        <p>Rs:10000/-</p>
+        <button class="px-2 " onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="adventure-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie Adventure Shoe/ad brown.webp" alt="">
+        <p>Adventure shoes stylish,brownColor </p>
+        <p>Rs:10000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="adventure-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie Adventure Shoe/ad olive.webp" alt="">
+        <p>Adventure shoes stylish,oliveColor </p>
+        <p>Rs:10000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+   </div>
+
+
+
+<div class="adventure-card-div-2 d-flex flex-direction-column justify-content-center gap-5 flex-wrap">
+    <div class="adventure-card-1  text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Adventure/ad danger.jpg" alt="">
+        <p>Adventure shoes stylish,dangerColor </p>
+        <p>Rs:10000/-</p>
+        <button class="px-2 " onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="adventure-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Adventure/ad green.png" alt="">
+        <p>Adventure shoes stylish,greenColor </p>
+        <p>Rs:10000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="adventure-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Adventure/ad lightblue.png" alt="">
+        <p>Adventure shoes stylish,lightblueColor </p>
+        <p>Rs:10000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+</div>
+
+
+
+<div class="Sneaker-card-div-1 d-flex flex-direction-column justify-content-center gap-5 flex-wrap">
+    <div class="Sneaker-card-1  text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Sneaker/snk black.avif" alt="">
+        <p>Sneaker shoes stylish,blackColor </p>
+        <p>Rs:15000/-</p>
+        <button class="px-2 " onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Sneaker-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Sneaker/snk rangeen.jpg" alt="">
+        <p>Sneaker shoes stylish,rangeenColor </p>
+        <p>Rs:15000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Sneaker-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Sneaker/snk white.jfif" alt="">
+        <p>Sneaker shoes stylish,whiteColor </p>
+        <p>Rs:15000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+</div>
+
+
+
+<div class="Sneaker-card-div-1 d-flex flex-direction-column justify-content-center gap-5 flex-wrap">
+    <div class="Sneaker-card-1  text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie Sneaker-shoe/sneaker brown.avif" alt="">
+        <p>Sneaker shoes stylish,brownColor </p>
+        <p>Rs:15000/-</p>
+        <button class="px-2 " onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Sneaker-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie Sneaker-shoe/sneaker gray.avif" alt="">
+        <p>Sneaker shoes stylish,grayColor </p>
+        <p>Rs:15000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Sneaker-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie Sneaker-shoe/sneaker black.jpg" alt="">
+        <p>Sneaker shoes stylish,blackColor </p>
+        <p>Rs:15000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+</div>
+
+
+
+
+<div class="Running-card-div-1 d-flex flex-direction-column justify-content-center gap-5 flex-wrap">
+    <div class="Running-card-1  text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Running/run rangeen.png" alt="">
+        <p>Running shoes stylish,rangeenColor </p>
+        <p>Rs:20000/-</p>
+        <button class="px-2 " onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Running-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Running/run green.jpg" alt="">
+        <p>Running shoes stylish,greenColor </p>
+        <p>Rs:20000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Running-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Running/run white.png" alt="">
+        <p>Running shoes stylish,whiteColor </p>
+        <p>Rs:20000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+</div>
+
+
+
+
+<div class="Running-card-div-1 d-flex flex-direction-column justify-content-center gap-5 flex-wrap">
+    <div class="Running-card-1  text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie Running-Shoe/run red.webp" alt="">
+        <p>Running shoes stylish,redColor </p>
+        <p>Rs:20000/-</p>
+        <button class="px-2 " onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Running-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie Running-Shoe/run white.webp" alt="">
+        <p>Running shoes stylish,whiteColor </p>
+        <p>Rs:20000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Running-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie Running-Shoe/run black.jfif" alt="">
+        <p>Running shoes stylish,blackColor </p>
+        <p>Rs:20000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+</div>
+
+
+
+
+<div class="Loafer-card-div-1 d-flex flex-direction-column justify-content-center gap-5 flex-wrap">
+    <div class="Loafer-card-1  text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie loafer-shoe/white.jpg" alt="">
+        <p>Loafer shoes stylish,whiteColor </p>
+        <p>Rs:7000/-</p>
+        <button class="px-2 " onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Loafer-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie loafer-shoe/brown.webp" alt="">
+        <p>Loafer shoes stylish,brownColor </p>
+        <p>Rs:7000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Loafer-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../mainImages/Catogorie loafer-shoe/black.jpg" alt="">
+        <p>Loafer shoes stylish,blackColor </p>
+        <p>Rs:7000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+</div>
+
+
+
+
+<div class="Loafer-card-div-1 d-flex flex-direction-column justify-content-center gap-5 flex-wrap">
+    <div class="Loafer-card-1  text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Loafer/chitabrown.png" alt="">
+        <p>Loafer shoes stylish,chitaColor </p>
+        <p>Rs:7000/-</p>
+        <button class="px-2 " onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Loafer-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Loafer/loaf lightbrown.png" alt="">
+        <p>Loafer shoes stylish,brownColor </p>
+        <p>Rs:7000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+
+    <div class="Loafer-card-1 border-2 text-center pb-3 loafer-card-1">
+        <img width="100%" height="350px" src="../ProductImages/Loafer/fishbrown.jpg" alt="">
+        <p>Loafer shoes stylish,fishColor </p>
+        <p>Rs:7000/-</p>
+        <button class="px-2" onclick="orderNow()">Buy Now</button>
+    </div>
+</div>
+
+  <!-- Card Section End -->
+  <!-- Catogories Section End -->
+
+
+  
+       <!-- Description Section Start -->
+       <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 catogories-head ">
+            <h1 class="fs-5">Conquer Every Terrain with Our Premium Adventure Shoes...</h1>
+            <p>"Explore new horizons with our high-performance Adventure Shoes - crafted for unmatched durability, comfort, and grip. Whether you're an experienced trekker or setting out for your first adventure, these shoes are built to support and empower you at every step of the journey."
+    
+            </p>
+    
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 catogories-head ">
+            <h1 class="fs-5">Ultimate Comfort & Performance Running Shoes...</h1>
+            <p>Achieve your fitness goals with our top-quality Running Shoes - engineered for maximum comfort, durability, and performance. Whether you're a seasoned runner or just starting, these shoes are designed to support you every step of the way.
+    
+            </p>
+    
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 catogories-head ">
+            <h1 class="fs-5">Stylish & Versatile Sneakers...</h1>
+            <p>Step out in style with our trendy Sneakers - the perfect blend of comfort and urban fashion. Ideal for any casual outing or everyday wear, these sneakers are designed to elevate your look effortlessly
+    
+            </p>
+    
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 catogories-head ">
+            <h1 class="fs-5">Classic & Stylish Loafer Shoes...</h1>
+            <p>Upgrade your style with our premium Loafer Shoes - a blend of elegance and comfort, designed for every occasion. Perfect for a formal event or a casual day out, these loafers provide an exceptional fit and sophisticated look.</p>
+    
+          </div>
+        </div>
+      </div>
+      <!-- Description Section End -->
+
+
+
+
+   <!--Home Footer Start -->
+   <footer class="container mt-5 pt-5 footer pb-1">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-3 footer-head-div">
+        <h1>Men's <span>Shoes</span></h1>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <ul>
+          <h5 class="fw-bold">Catogories</h5>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="../Catogorie-Loafer/loafer.html" target="_blank">Loafer Shoe</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="../Catogorie-Sneaker/sneaker.html" target="_blank">Sneaker-shoe</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="../Catogorie-Adventure/adventure.html" target="_blank">Adventure Shoe</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="../Catogorie-Running/running.html" target="_blank">Running-Shoe</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <ul>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="../index.html" target="_blank">Home</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="product.html" target="_blank">Product</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="../About/about.html" target="_blank">About</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="../Contact/contact.html" target="_blank">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+         <h5 class="fw-bold">Social Links</h5>
+        <div>
+          <a class="text-light fs-4 " href="https://www.linkdin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="text-primary fs-4 ps-3" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a class="text-dark fs-4 ps-3" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a class="text-dark fs-4 ps-3" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        </div>
+      </div>
+      <p class="text-center copyright mt-5 " style="border-top: 2px solid orange;">&copy; 2024 Men's Shoe.com All Rights Reserved.</p>
+    </footer>
+
+     
+          <!--Home Footer End -->
+</body>
+<script src="../app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>

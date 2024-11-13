@@ -1,0 +1,15 @@
+.Catogorie-head h1{
+    color: orangered;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 3px solid gray;
+    margin-bottom: 50px;
+    margin-top: 90px;
+}
+
+.adventure-shoe-div,.adventure-card-div-2,.Sneaker-card-div-1,.Running-card-div-1,.Loafer-card-div-1{
+    margin-bottom: 100px;
+}
+.main{
+    margin-top: 90px;
+}

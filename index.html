@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <script src="https://www.gstatic.com/firebasejs/7,17,2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <!-- header Start -->
+  <nav class="navbar navbar-expand-lg container-fluid ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light ms-3" href="#"><span>Men's</span> Shoes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-dark "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link link-nav " aria-current="page" href="index.html" target="_blank">Home</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" aria-current="page" href="./About/about.html" target="_blank">About</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="Product/product.html" target="_blank">Product</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="./Contact/contact.html" target="_blank">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shoe Catogories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item bg-dark text-light" href="Catogorie-Running/running.html">Dynamic Runner</a></li>
+              <li><a class="dropdown-item bg-dark text-light" href="Catogorie-Adventure/adventure.html">Adventure</a></li>
+              <li><a class="dropdown-item bg-dark text-light" href="Catogorie-Sneaker/sneaker.html">Sneakers</a></li>
+              <li><a class="dropdown-item bg-dark text-light" href="Catogorie-Loafer/loafer.html">Loafers</a></li>
+
+
+            </ul>
+          </li>
+        </ul>
+        <div class="icon">
+          <i title="Search" class="fa-solid fa-magnifying-glass text-light fs-5 mx-3"></i>
+          <i title="Setting" class="fa-solid fa-gear text-light fs-5 mx-3"></i>
+          <i title="SingUp" class="fa-solid fa-user text-light fs-5 mx-3"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header End -->
+
+
+  <!-- Section Image Start -->
+  <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 70px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img height="573px" src="https://images.unsplash.com/photo-1473010350295-2c82192ebd8e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Style Shoe</h5>
+              <p>Classic formal shoes with closed lacing, ideal for formal events..</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img height="573px" src="https://images.unsplash.com/photo-1456894332557-b03dc5cf60d5?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Winter Shoe</h5>
+              <p>Casual, mid-height boots for chilly weather.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img height="573px" src="https://images.unsplash.com/photo-1558191053-c03db2757e3d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Adidas Shoe</h5>
+              <p>
+                Adidas shoes: Comfort, performance, iconic style, durability.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+  <!-- Section Image End -->
+
+  <!-- Home img Section Start -->
+  <div class="container border border-2 main">
+    <div class="row ">
+
+      <div class="col-12 col-md-6 d-flex align-items-center img-sec">
+        <h1 class="img-heading ">Amazing Men's Shoe <br> <span>Lets Check it...</span> </h1>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="img-div text-center">
+          <img src="mainImages/runingshoe.jpg" alt="Running Shoe" class="img-fluid" style="margin-left: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Home img Section End -->
+
+  <!-- img Section Description Start -->
+  <div class="container mt-3">
+    <div class="row">
+      <div class="Catogories-head-Desc col-12 col-md-12 text-center p-1">
+        <h2 class="Catogories-Desc">Elevate Your Everyday Look</h2>
+        <p> "Discover our exclusive range of men's footwear, crafted for style, comfort, and durability. From casual
+          sneakers and rugged boots to elegant dress shoes, each pair is designed to suit various occasions and elevate
+          your wardrobe. Whether for daily wear, office, or special events, our collection ensures the perfect blend of
+          functionality and fashion for every step."</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- img Section Description End -->
+
+  <!-- Catogories Section Start -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 catogories-head text-center">
+        <h1 class="fs-5">SHOE CATOGORIES...</h1>
+        <p>"Stylish, durable shoes designed for every occasion—comfort meets timeless elegance."</p>
+
+      </div>
+    </div>
+  </div>
+  <!-- Catogories Section End -->
+
+  <!-- Catogories Card Section Start -->
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-3 text-center border catogories-card-1 p-2">
+       <div class="img-adventure">
+        <img width="100%"
+        src="https://cdn.pixabay.com/photo/2016/09/08/17/55/shoe-1655010_960_720.png"
+        alt="">
+       </div>
+        <button class="mt-2"><a href="Catogorie-Adventure/adventure.html" target="_blank">Adventure Shoe</a></button>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 text-center border catogories-card-1 p-2">
+        <img width="100%"
+          src="mainImages/Catogories/sneakers.png"
+          alt="">
+        <button class="mt-2"><a href="Catogorie-Sneaker/sneaker.html" target="_blank">Sneaker Shoe</a></button>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 text-center border catogories-card-1 p-2">
+        <img width="100%"
+          src="mainImages/Catogories/runner.png"
+          alt="">
+        <button class="px-3 mt-2"><a href="Catogorie-Running/running.html" target="_blank">Running Shoe</a></button>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 text-center border catogories-card-1 p-2">
+        <div class="img-loafer rounded">
+          <img width="100%" height="180px"
+          src="ProductImages/Loafer/loaf lightbrown.png"
+          alt="">
+        </div>
+        <button class="px-3 mt-2"><a href="Catogorie-Loafer/loafer.html" target="_blank">Loafer Shoe</a></button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Catogries Card Section End -->
+
+  <!-- Loafer Shoe Section Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 loafer-head" >
+        <h1 class="loafer-heading">Loafer Shoe..</h1>
+        <p>
+          Loafer shoes stylish, browncolor, and comfortable for everyday casual wear..
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loafer Card Section Start -->
+   <div class="container mb-3">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+      <img width="100%" height="350px" class="" src="mainImages/Catogorie loafer-shoe/white.jpg" alt="">
+      <p>Loafer shoes stylish,blueColor </p>
+      <button class="px-2" onclick="orderNow()">Rs:10000/-</button>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+      <img width="100%" height="350px" class="" src="mainImages/Catogorie loafer-shoe/brown.webp" alt="">
+      <p>Loafer shoes stylish,brownColor </p>
+      <button class="px-2" onclick="orderNow()">Rs:9500/-</button>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+      <img width="100%" height="350px" class="" src="mainImages/Catogorie loafer-shoe/black.jpg" alt="">
+      <p>Loafer shoes stylish,blackColor </p>
+      <button class="px-2" onclick="orderNow()">Rs:9000/-</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-12 text-center">
+      <button class="text-center explore-loafer"><a class="explore-loafer"  href="Catogorie-Loafer/loafer.html" target="_blank">Explore Now! Loafer Shoe</a></button>
+    </div>
+  </div>
+</div>
+
+
+   
+  <!-- Loafer Card Section End -->
+  <!-- Loafer Shoe Section End -->
+
+
+
+   <!-- Sneakers Shoe Section Start -->
+   <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-12 loafer-head" >
+        <h1 class="loafer-heading">Sneakers Shoe..</h1>
+        <p>
+          Sneakers shoes stylish, browncolor, and comfortable for everyday casual wear..
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sneakers Card Section Start -->
+
+  <div class="container mb-3">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+        <img width="100%" height="350px" class="" src="mainImages/Catogorie Sneaker-shoe/sneaker black.jpg" alt="">
+        <p>Sneaker shoes stylish,blackColor </p>
+        <button class="px-2" onclick="orderNow()">Rs:15000/-</button>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+        <img width="100%" height="350px" class="" src="mainImages/Catogorie Sneaker-shoe/sneaker brown.avif" alt="">
+        <p>Sneaker shoes stylish,brownColor </p>
+        <button class="px-2" onclick="orderNow()">Rs:14000/-</button>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+        <img width="100%" height="350px" class="" src="mainImages/Catogorie Sneaker-shoe/sneaker gray.avif" alt="">
+        <p>Sneaker shoes stylish,grayColor </p>
+        <button class="px-2" onclick="orderNow()">Rs:13000/-</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 text-center">
+        <button class="text-center explore-loafer"><a class="explore-loafer" href="Catogorie-Sneaker/sneaker.html" target="_blank">Explore Now! Sneaker Shoe</a> </button>
+    </div>
+  </div>
+  <!-- Sneakers Card Section End -->
+  <!-- Sneakers Shoe Section End -->
+
+
+<!-- Adventure Shoe Section Start -->
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-12 loafer-head" >
+      <h1 class="loafer-heading">Adventure Shoe..</h1>
+      <p>
+        Adventure shoes stylish, browncolor, and comfortable for everyday casual wear..
+        </p>
+    </div>
+  </div>
+</div>
+
+<!-- Adventure Card Section Start -->
+<div class="container">
+  <div class="row">
+   
+      <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+        <img width="100%" height="350px" class="" src="mainImages/Catogorie Adventure Shoe/ad black.webp" alt="">
+        <p>Adventure shoes stylish,blackColor </p>
+        <button class="px-2" onclick="orderNow()">Rs:18000/-</button>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+        <img width="100%" height="350px" class="" src="mainImages/Catogorie Adventure Shoe/ad brown.webp" alt="">
+        <p>Adventure shoes stylish,brownColor </p>
+        <button class="px-2" onclick="orderNow()">Rs:17000/-</button>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+        <img width="100%" height="350px" class="" src="mainImages/Catogorie Adventure Shoe/ad olive.webp" alt="">
+        <p>Adventure shoes stylish,oliveColor </p>
+        <button class="px-2" onclick="orderNow()">Rs:19000/-</button>
+      </div>
+  </div>
+</div>
+
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12 col-md-12 text-center ">
+      <button class="text-center explore-loafer explore-media"><a class="explore-loafer" href="Catogorie-Adventure/adventure.html" target="_blank">Explore Now! Adventure Shoe</a></button>
+  </div>
+</div>
+
+ <!-- Adventure Card Section End -->
+  <!-- Adventure Shoe Section End -->
+
+  <!-- Running Shoe Section Start -->
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-12 loafer-head" >
+        <h1 class="loafer-heading">Running Shoe..</h1>
+        <p>
+          Running shoes stylish, browncolor, and comfortable for everyday casual wear..
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Running Card Section Start -->
+   <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+        <img width="100%" height="350px" class="" src="mainImages/Catogorie Running-Shoe/run black.jfif" alt="">
+        <p>Running shoes stylish,blackColor </p>
+        <button class="px-2" onclick="orderNow()">Rs:20000/-</button>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+        <img width="100%" height="350px" class="" src="mainImages/Catogorie Running-Shoe/run white.webp" alt="">
+        <p>Running shoes stylish,blueColor </p>
+        <button class="px-2" onclick="orderNow()">Rs:21000/-</button>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 text-center border p-0 loafer-card-1 pb-4">
+        <img width="100%" height="350px" class="" src="mainImages/Catogorie Running-Shoe/run red.webp" alt="">
+        <p>Running shoes stylish,redColor </p>
+        <button class="px-2" onclick="orderNow()">Rs:22000/-</button>
+      </div>
+    </div>
+   </div>
+
+   <div class="container mt-3">
+    <div class="row">
+      <div class="col-12 col-md-12 text-center">
+        <button class="text-center explore-loafer explore-media"><a class="explore-loafer" href="Catogorie-Running/running.html" target="_blank">Explore Now! Running Shoe</a></button>
+    </div>
+  </div>
+  <!-- Running Card Section End -->
+  <!-- Running Shoe Section End -->
+
+
+
+
+   <!-- Description Section Start -->
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 catogories-head ">
+        <h1 class="fs-5">Step Up Your Style and Comfort with Our Exclusive Collection of Men's Shoes...</h1>
+        <p>Our collection offers the perfect shoes for every occasion, whether you're on the move all day or looking for a stylish, casual look. With high-quality materials and the latest designs, our shoes combine durability and comfort. For the office, gym, outdoor adventures, or casual outings - explore-media each pair is crafted to meet your unique style and needs. Make every step confident and stylish with our carefully crafted footwear.</p>
+
+      </div>
+    </div>
+  </div>
+  <!-- Description Section End -->
+
+
+  <!--Home Footer Start -->
+  <footer class="container mt-5 pt-5 footer pb-1">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-3 footer-head-div">
+        <h1>Men's <span>Shoes</span></h1>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <ul>
+          <h5 class="fw-bold">Catogories</h5>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="Catogorie-Loafer/loafer.html" target="_blank">Loafer Shoe</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="Catogorie-Sneaker/sneaker.html" target="_blank">Sneaker-shoe</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="Catogorie-Adventure/adventure.html" target="_blank">Adventure Shoe</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="Catogorie-Running/running.html" target="_blank">Running-Shoe</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <ul>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="index.html" target="_blank">Home</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="Product/product.html" target="_blank">Product</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="./About/about.html" target="_blank">About</a></li>
+          <li class="link-li"><a class="link-footer text-decoration-none" href="./Contact/contact.html" target="_blank">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+         <h5 class="fw-bold">Social Links</h5>
+        <div>
+          <a class="text-light fs-4 " href="https://www.linkdin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="text-primary fs-4 ps-3" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a class="text-dark fs-4 ps-3" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a class="text-dark fs-4 ps-3" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        </div>
+      </div>
+      <p class="text-center copyright mt-5 " style="border-top: 2px solid orange;">&copy; 2024 Men's Shoe.com All Rights Reserved.</p>
+    </footer>
+
+     
+          <!--Home Footer End -->
+
+         
+
+
+
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>

@@ -1,0 +1,240 @@
+/* header Start */
+.navbar {
+    background: linear-gradient(90deg, rgb(54, 54, 49), rgb(98, 95, 95), rgb(135, 135, 113));
+    box-shadow: 3px 3px 10px rgb(159, 156, 156);
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    
+
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.navbar-brand span {
+    font-size: 28px;
+    color: orange;
+    letter-spacing: 1px;
+}
+
+.navbar-brand {
+    margin-right: 200px;
+}
+
+@media only screen and (max-width:480px){
+.navbar-brand{
+    margin-right: 0px;
+}
+}
+
+.nav-link {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: aliceblue;
+}
+
+
+.nav-link:hover {
+    color: orange;
+    transition: 0.2s;
+}
+
+.icon {
+    margin-left: auto;
+}
+
+/* header End */
+
+
+/* Section Image Start */
+.carousel-caption h5 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: orangered;
+
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
+    color: orange;
+    font-weight: bold;
+    font-size: 19px;
+
+}
+@media only screen and (max-width:750px){
+    .carousel-inner{
+        height: 400px;
+    }
+}
+/* Section Image End */
+
+
+/*Home img Section Start*/
+.main{
+    margin-top: 90px;
+}
+@media only screen and (max-width:650px){
+    .main{
+        margin-top: 20px;
+    }
+}
+.img-sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg,rgb(116, 116, 111), rgb(147, 136, 136));
+}
+
+.img-heading {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+@media only screen and (max-width:400px){
+    .img-heading{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+}
+
+.img-heading span {
+    color: orangered;
+}
+/*Home img Section End*/
+
+/* img Section Description Start */
+
+.Catogories-head-Desc{
+    border-bottom: 2px solid gray;
+    box-shadow: 3px 5px 4px rgb(159, 156, 156),-3px -5px 4px rgb(159, 156, 156);
+    
+}
+
+/* img Section Description End */
+
+/* Section Catogories Start */
+.catogories-head p{
+    font-size: 16px;
+    border-bottom: 2px solid gray;
+}
+/* Section Catogories End */
+
+/* Catogories Card Section Start */
+
+.catogories-card-1 button {
+    outline: none;
+    background: linear-gradient(90deg,rgb(0, 0, 0),rgb(137, 136, 132));
+    border-radius: 8px;
+    padding: 5px;
+    
+}
+.catogories-card-1 button a{
+    color: white;
+    text-decoration: none;
+    
+}
+.catogories-card-1 button a:hover{
+    border-bottom: 3px solid orange;
+}
+
+
+
+/* Catogories Card Section End */
+
+/* Loafer Shoe Section Start */
+.loafer-heading{
+    color:rgb(46, 44, 44);
+    text-decoration: underline;
+}
+/* Loafer Shoe Section End */
+
+/* loafer Card Section Start */
+.loafer-card-1{
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 5px 3px gray,0px -5px gray;
+}
+
+.loafer-card-1 button{
+    border-radius: 8px;
+    color: white;
+    background: linear-gradient(90deg,rgb(66, 69, 73),rgb(150, 141, 135));
+    font-size: 20px;
+}
+.loafer-card-1 button:hover {
+    transition: 0.5s ease;
+    box-shadow: 3px 3px 3px white;
+    border: 2px solid white;
+
+}
+.loafer-card-1 p{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.explore-loafer{
+    font-size: 20px;
+    outline: none;
+    background: linear-gradient(90deg,rgb(0, 0, 0),rgb(74, 73, 71),rgb(137, 136, 132));
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    text-decoration: none;
+
+}
+.explore-loafer:hover{
+    /* border: 2px solid orange; */
+    box-shadow: 0px 3px 3px orange;
+    transition: 0.5s;
+    color: white;
+}
+@media only screen and (max-width:345px){
+    .explore-media{
+        font-size: 17px;
+    }
+}
+
+/* loafer Card Section End*/
+
+/* footer Start */
+.footer{
+    background: linear-gradient(90deg,rgb(199, 189, 189),rgb(92, 89, 89),rgb(129, 126, 126));
+}
+.footer-head-div h1{
+    color: rgb(255, 102, 0);
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgb(243, 98, 8);
+}
+.footer-head-div h1 span{
+    color: black;
+}
+.link-footer{
+    font-size: 18opx;
+    color: white;
+    
+}
+.link-footer:hover{
+    font-size: 18opx;
+    color:orange;
+    
+}
+.link-li{
+    
+    list-style-type: none;
+}
+.link-li:hover{
+    
+    border-bottom: 2px solid orange;
+}
+
+.copyright{
+color: wheat;
+}
+/* footer End */
+
+
